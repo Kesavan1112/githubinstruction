@@ -1,0 +1,41 @@
+commands of folder below:
+ 
+1.git init
+2.git add .
+definition:
+The git add . command in Git is used to add all changes in your working directory to the staging area, preparing them to be committed. This includes new files, modified files, and deleted files. Here’s a breakdown of what happens when you run this command.
+3.git commit -m"created two file"
+4.git remote add origin https://github.com/Kesavan1112/repo1.git(before we should create empty folder on github and we can getlink after create it shows the below Quick setup — if you’ve done this kind of thing before)
+5.git branch
+6.git branch -M main
+7.git push origin main
+
+
+
+PS E:\n3ew> cd localsystemfolder
+explanation :above command is localsystemfolder our local sytsem's folder 
+
+
+PS E:\n3ew\localsystemfolder> git init
+Initialized empty Git repository in E:/n3ew/localsystemfolder/.git/
+
+
+PS E:\n3ew\localsystemfolder> git add .
+ 1 file changed, 11 insertions(+)
+newrepo.git
+
+
+PS E:\n3ew\localsystemfolder> git branch
+* master
+
+PS E:\n3ew\localsystemfolder> git branch -m main
+
+PS E:\n3ew\localsystemfolder> git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 371 bytes | 371.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Kesavan1112/newrepo.git
+ * [new branch]      main -> main

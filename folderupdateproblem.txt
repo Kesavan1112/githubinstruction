@@ -1,0 +1,23 @@
+from local system's folder to git repository proble come like
+
+
+E:\kesavan\javatest\javaremember1>git branch --set-upstream-to=origin/main main
+branch 'main' set up to track 'origin/main'.
+
+E:\kesavan\javatest\javaremember1>git pull
+Already up to date.
+
+E:\kesavan\javatest\javaremember1>git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 959 bytes | 11.00 KiB/s, done.
+From https://github.com/Kesavan1112/javaremember1
+   033b60a..44e8ef9  main       -> origin/main
+Updating 033b60a..44e8ef9
+Fast-forward
+ upcastinganddowncastinginjava.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+E:\kesavan\javatest\javaremember1>

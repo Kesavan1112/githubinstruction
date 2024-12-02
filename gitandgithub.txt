@@ -1,0 +1,138 @@
+1.git-version control system eg:1.1
+ 
+
+2.git hup-git hub is a web based git repository hosting service.
+-repository like folder
+
+alternative of git:
+git-fruit
+github-mixy eg:gitbucket,bitbucket
+
+command prompt setting for github:
+config --global user.name "Kesavan1112" git config --global user.email "kesavanr1112@gmail.com"
+
+
+*acutually git file created when we use cd what we have in github clonelink which means orgin.next step we give folder name of what we have created in git hub repository.eg:(E:\githubfolder>cd againcheck).
+we can check our folder eg:githubfolder on new volume E.you click it and able to see the git file which works like bridge between vsc and github.but it hidden ticked file you can check top of bar it is view option there.click you hidden files.
+
+
+
+
+github commands:
+1.git clone clonelink=>we can use in visual studio code what we have in github.clonelink which means orgin.next we give folder name of what we have created in git hub repository.
+definition:*The git clone command is used to create a copy of a specific repository or branch within a repository. Git is a distributed version control system. Maximize the advantages of a full repository on your own machine by cloning.
+*in Git, cloning is the act of making a copy of any target repository. The target repository can be remote or local. You can clone your repository from the remote repository to create a local copy on your system. Also, you can sync between the two locations.
+
+
+
+
+2.git add=>The git add command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit. However, git add doesn't really affect the repository in any significant way—changes are not actually recorded until you run git commit.
+
+3.git commit -m "wecangiveanymessagewithindoublequotes"=>he git commit command is one of the core primary functions of Git. Prior use of the git add command is required to select the changes that will be staged for the next commit. Then git commit is used to create a snapshot of the staged changes along a timeline of a Git projects history.
+
+
+
+4.git push origin main=>The git push command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repo. It's the counterpart to git fetch, but whereas fetching imports commits to local branches, pushing exports commits to remote branches.
+
+
+origin=>link 
+
+basically works github folder=>main=>file
+
+
+
+5.git status=>it shows status of git
+
+
+github website how to utilize steps:
+1.initially open the github
+2.second click your profile at top of the right corner.or plus symbol shows at same layer.click it which shows new respository.
+3.you do click create repository after given any name  our repository.it would show Get started by creating a new file or uploading an existing file. 
+4.we do click creating new file.it asks name of file we give any name that what we want.we do click 'commit changes' button for save the file.
+5.important point  In technology, especially in the software development field, “commit” refers to the act of saving changes made in a file or set of files, often in a version control system like Git. The term is used when these changes are permanently applied and stored in the system's repository.
+
+
+1.delete-same process like how we insert the file from local repository to remote repository but first you must delete the file on visual studio code.next we follow the step what we have done from vsc(local repository) to github(remote repository) .
+
+2.git pull origin main-whatever we edit or delete on github.after using the command we able to see what we have edited and deleted.
+
+definition:The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content.
+
+
+
+folder insert from local repository(our machine) to remote repository(github storage)
+
+commands of folder below:
+ 
+1.git init
+2.git add .
+definition:
+The git add . command in Git is used to add all changes in your working directory to the staging area, preparing them to be committed. This includes new files, modified files, and deleted files. Here’s a breakdown of what happens when you run this command.
+
+3.git commit -m"created two file"
+4.git remote add origin https://github.com/Kesavan1112/repo1.git(before we should create empty folder on github and we can getlink after create it shows the below Quick setup — if you’ve done this kind of thing before)
+5.git branch
+6.git branch -M main
+7.git push origin main
+ 
+
+what is branch?
+
+definition=>Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. You always create a branch from an existing branch. Typically, you might create a new branch from the default branch of your repository.
+
+*default branch is main branch
+* we can say sub branch whatever we create but except main branch.sub branch we can give the name for it.  
+
+commands of branch below :
+1.git branch -a=>it shows how many branch on github.
+
+2.branch checkout branchname=>branchname which means already we have created on github where you click the main branch which shows the create option and we able to create there.
+definition:
+*Switch Branch: It changes the current branch to the specified branch (branchname). If you have any uncommitted changes in your working directory, Git will not allow you to switch branches unless you commit or stash those changes.
+
+*Update Working Directory: It updates the files in your working directory to match the state of the files in the branch you are switching to. Any changes that were made in the branch you are switching from will be replaced by the changes in the branch you are switching to.
+
+(below command is difference between two branch main branch and sub branch):
+1.git diff branchname=>we can use for difference between main branch and branchname but before we use this command (git checkout main)
+
+
+
+(if i mingle my sub branch to main branch ,follow below step):
+
+1.git merge branchname=>branchname which means already we have created on github where you click the main branch which shows the create option and we able to create there.
+definition:
+the git merge branchname command in Git is used to merge changes from the specified branch (branchname or subbranch) into the current branch(main branch).
+
+2.git push origin main=>finally subbranch mingled with main branch.
+
+
+1.git pull
+*This command fetches changes from the remote repository and merges them into the current branch.
+*The specific remote branch to pull from is determined by the tracking information of the current branch.
+*If the current branch is set to track a remote branch (e.g., origin/main), git pull will pull changes from that tracked branch.
+
+2.git pull origin main
+*this command explicitly fetches changes from the main branch of the origin remote repository and merges them into the current branch.
+*It bypasses the tracking information and directly specifies the remote and branch from which to pull changes.
+
+
+(if i add new file or new folder in subbranch to  remote repository,i should follow below tips)
+first step
+git checkout (subbranchanme or branchname)
+last step 
+git push origin subbranchanme(we don't use main here account of this is subbranch). 
+
+
+
+
+pull request =>it uses you can't directly to insert your code into main branch.when we work realtime project there you can use like this.because of if you send your code to team leader the way of pull request,it shows on pull  request on your team leader github site.
+
+message shows there that github link and click this=>"compare&pull request"after it ."create pullrequest"after it "merge pull request"after it  confirm merge.
+
+
+
+
+sometime,you can't merge that is merge conflict then you should click 'merge reslove' option when we use same file same edit ,this problem come. 
+
+
+

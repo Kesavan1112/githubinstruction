@@ -1,0 +1,49 @@
+(below 5 steps for connection between gitrepository and localsystem)
+step 1
+config --global user.name "Kesavan1112" git config --global user.email "kesavanr1112@gmail.com"
+step 2
+git clone https://github.com/Kesavan1112/repo1.git
+step 3
+git add file.txt
+step 4
+git commit -m"any message"
+step 5
+git push origin main
+step 6(it is optional)
+git status
+
+(your repository system delete/update/edit)
+if you want to update or edit or delete anything repository and see your editor that,you use pull command 
+step:git pull
+
+
+(your local system delete/update/edit)
+you use above steps after delete or update or edit the code on  editor.
+following these steps .
+1.git add file.txt(what file delete/edit/update you give that name).
+2.git commit -m"any message"
+3.git push origin main
+
+
+
+
+(below 5 steps for connection between gitrepository and localsystem)
+example below
+
+step 1:E:\n3ew>git config --global user.email "kesavanr1112@gmail.com"
+step 2:PS E:\n3ew> cd repo1
+step 3:PS E:\n3ew\repo1> git clone https://github.com/Kesavan1112/repo1.git(if already clone ,it does n't this step)
+step 4:ps E:\n3ew\repo1>git add first.tx
+step 5:ps E:\n3ew\repo1>git commit -m"any message"
+step 6:ps E:\n3ew\repo1>git push origin main
+
+
+(your repository system delete/update/edit)
+ps E:\n3ew\repo1>git pull
+
+
+
+(your local system delete/update/edit)
+ps E:\n3ew\repo1>git add file.txt(what file delete/edit/update you give that name).
+ps E:\n3ew\repo1>git commit -m"any message"
+ps \n3ew\repo1>git push origin main
